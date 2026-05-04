@@ -28,5 +28,11 @@ add_executable(test_reg
     src/components/registers/registers.cpp
 )
 
+add_executable(test_imem
+    src/components/instruction_memory/instruction_memory_tb.cpp
+    src/components/instruction_memory/instruction_memory.cpp
+)
+
 target_link_libraries(test_alu systemc)
 target_link_libraries(test_reg systemc)
+target_link_libraries(test_imem systemc)

@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/test_reg.dir/src/components/registers/registers_tb.cpp.o CMakeFiles/test_reg.dir/src/components/registers/registers.cpp.o -o test_reg   -L/usr/local/systemc-3.0.2/lib-linux64  -Wl,-rpath,/usr/local/systemc-3.0.2/lib-linux64 -lsystemc 
