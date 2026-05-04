@@ -42,8 +42,42 @@ add_executable(test_sign_extend
     src/components/sign_extend/sign_extend.cpp
 )
 
+add_executable(test_unit_control
+    src/control/unit_control_tb.cpp
+    src/control/unit_control.cpp
+)
+
+add_executable(test_datapath
+    src/datapath/datapath_tb.cpp
+    src/datapath/datapath.cpp
+
+    src/components/alu/alu.cpp
+    src/components/mux/mux.cpp
+    src/components/sign_extend/sign_extend.cpp
+    src/components/registers/registers.cpp
+    src/control/unit_control.cpp
+)
+
+add_executable(test_processor
+    src/processor/processor_tb.cpp
+    src/processor/processor.cpp
+
+    src/datapath/datapath.cpp
+
+    src/components/alu/alu.cpp
+    src/components/mux/mux.cpp
+    src/components/sign_extend/sign_extend.cpp
+    src/components/registers/registers.cpp
+
+    src/control/unit_control.cpp
+)
+
 target_link_libraries(test_alu systemc)
 target_link_libraries(test_reg systemc)
 target_link_libraries(test_pc systemc)
 target_link_libraries(test_mux systemc)
 target_link_libraries(test_sign_extend systemc)
+target_link_libraries(test_unit_control systemc)
+target_link_libraries(test_datapath systemc)
+target_link_libraries(test_processor systemc)
+

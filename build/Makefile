@@ -181,12 +181,53 @@ test_sign_extend/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_sign_extend.dir/build.make CMakeFiles/test_sign_extend.dir/build
 .PHONY : test_sign_extend/fast
 
+#=============================================================================
+# Target rules for targets named test_unit_control
+
+# Build rule for target.
+test_unit_control: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_unit_control
+.PHONY : test_unit_control
+
+# fast build rule for target.
+test_unit_control/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_unit_control.dir/build.make CMakeFiles/test_unit_control.dir/build
+.PHONY : test_unit_control/fast
+
+#=============================================================================
+# Target rules for targets named test_datapath
+
+# Build rule for target.
+test_datapath: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_datapath
+.PHONY : test_datapath
+
+# fast build rule for target.
+test_datapath/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_datapath.dir/build.make CMakeFiles/test_datapath.dir/build
+.PHONY : test_datapath/fast
+
+#=============================================================================
+# Target rules for targets named test_processor
+
+# Build rule for target.
+test_processor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_processor
+.PHONY : test_processor
+
+# fast build rule for target.
+test_processor/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_processor.dir/build.make CMakeFiles/test_processor.dir/build
+.PHONY : test_processor/fast
+
 src/components/alu/alu.o: src/components/alu/alu.cpp.o
 .PHONY : src/components/alu/alu.o
 
 # target to build an object file
 src/components/alu/alu.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_alu.dir/build.make CMakeFiles/test_alu.dir/src/components/alu/alu.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_datapath.dir/build.make CMakeFiles/test_datapath.dir/src/components/alu/alu.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_processor.dir/build.make CMakeFiles/test_processor.dir/src/components/alu/alu.cpp.o
 .PHONY : src/components/alu/alu.cpp.o
 
 src/components/alu/alu.i: src/components/alu/alu.cpp.i
@@ -195,6 +236,8 @@ src/components/alu/alu.i: src/components/alu/alu.cpp.i
 # target to preprocess a source file
 src/components/alu/alu.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_alu.dir/build.make CMakeFiles/test_alu.dir/src/components/alu/alu.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_datapath.dir/build.make CMakeFiles/test_datapath.dir/src/components/alu/alu.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_processor.dir/build.make CMakeFiles/test_processor.dir/src/components/alu/alu.cpp.i
 .PHONY : src/components/alu/alu.cpp.i
 
 src/components/alu/alu.s: src/components/alu/alu.cpp.s
@@ -203,6 +246,8 @@ src/components/alu/alu.s: src/components/alu/alu.cpp.s
 # target to generate assembly for a file
 src/components/alu/alu.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_alu.dir/build.make CMakeFiles/test_alu.dir/src/components/alu/alu.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_datapath.dir/build.make CMakeFiles/test_datapath.dir/src/components/alu/alu.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_processor.dir/build.make CMakeFiles/test_processor.dir/src/components/alu/alu.cpp.s
 .PHONY : src/components/alu/alu.cpp.s
 
 src/components/alu/alu_tb.o: src/components/alu/alu_tb.cpp.o
@@ -235,6 +280,8 @@ src/components/mux/mux.o: src/components/mux/mux.cpp.o
 # target to build an object file
 src/components/mux/mux.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_mux.dir/build.make CMakeFiles/test_mux.dir/src/components/mux/mux.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_datapath.dir/build.make CMakeFiles/test_datapath.dir/src/components/mux/mux.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_processor.dir/build.make CMakeFiles/test_processor.dir/src/components/mux/mux.cpp.o
 .PHONY : src/components/mux/mux.cpp.o
 
 src/components/mux/mux.i: src/components/mux/mux.cpp.i
@@ -243,6 +290,8 @@ src/components/mux/mux.i: src/components/mux/mux.cpp.i
 # target to preprocess a source file
 src/components/mux/mux.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_mux.dir/build.make CMakeFiles/test_mux.dir/src/components/mux/mux.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_datapath.dir/build.make CMakeFiles/test_datapath.dir/src/components/mux/mux.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_processor.dir/build.make CMakeFiles/test_processor.dir/src/components/mux/mux.cpp.i
 .PHONY : src/components/mux/mux.cpp.i
 
 src/components/mux/mux.s: src/components/mux/mux.cpp.s
@@ -251,6 +300,8 @@ src/components/mux/mux.s: src/components/mux/mux.cpp.s
 # target to generate assembly for a file
 src/components/mux/mux.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_mux.dir/build.make CMakeFiles/test_mux.dir/src/components/mux/mux.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_datapath.dir/build.make CMakeFiles/test_datapath.dir/src/components/mux/mux.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_processor.dir/build.make CMakeFiles/test_processor.dir/src/components/mux/mux.cpp.s
 .PHONY : src/components/mux/mux.cpp.s
 
 src/components/mux/mux_tb.o: src/components/mux/mux_tb.cpp.o
@@ -331,6 +382,8 @@ src/components/registers/registers.o: src/components/registers/registers.cpp.o
 # target to build an object file
 src/components/registers/registers.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_reg.dir/build.make CMakeFiles/test_reg.dir/src/components/registers/registers.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_datapath.dir/build.make CMakeFiles/test_datapath.dir/src/components/registers/registers.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_processor.dir/build.make CMakeFiles/test_processor.dir/src/components/registers/registers.cpp.o
 .PHONY : src/components/registers/registers.cpp.o
 
 src/components/registers/registers.i: src/components/registers/registers.cpp.i
@@ -339,6 +392,8 @@ src/components/registers/registers.i: src/components/registers/registers.cpp.i
 # target to preprocess a source file
 src/components/registers/registers.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_reg.dir/build.make CMakeFiles/test_reg.dir/src/components/registers/registers.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_datapath.dir/build.make CMakeFiles/test_datapath.dir/src/components/registers/registers.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_processor.dir/build.make CMakeFiles/test_processor.dir/src/components/registers/registers.cpp.i
 .PHONY : src/components/registers/registers.cpp.i
 
 src/components/registers/registers.s: src/components/registers/registers.cpp.s
@@ -347,6 +402,8 @@ src/components/registers/registers.s: src/components/registers/registers.cpp.s
 # target to generate assembly for a file
 src/components/registers/registers.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_reg.dir/build.make CMakeFiles/test_reg.dir/src/components/registers/registers.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_datapath.dir/build.make CMakeFiles/test_datapath.dir/src/components/registers/registers.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_processor.dir/build.make CMakeFiles/test_processor.dir/src/components/registers/registers.cpp.s
 .PHONY : src/components/registers/registers.cpp.s
 
 src/components/registers/registers_tb.o: src/components/registers/registers_tb.cpp.o
@@ -379,6 +436,8 @@ src/components/sign_extend/sign_extend.o: src/components/sign_extend/sign_extend
 # target to build an object file
 src/components/sign_extend/sign_extend.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_sign_extend.dir/build.make CMakeFiles/test_sign_extend.dir/src/components/sign_extend/sign_extend.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_datapath.dir/build.make CMakeFiles/test_datapath.dir/src/components/sign_extend/sign_extend.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_processor.dir/build.make CMakeFiles/test_processor.dir/src/components/sign_extend/sign_extend.cpp.o
 .PHONY : src/components/sign_extend/sign_extend.cpp.o
 
 src/components/sign_extend/sign_extend.i: src/components/sign_extend/sign_extend.cpp.i
@@ -387,6 +446,8 @@ src/components/sign_extend/sign_extend.i: src/components/sign_extend/sign_extend
 # target to preprocess a source file
 src/components/sign_extend/sign_extend.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_sign_extend.dir/build.make CMakeFiles/test_sign_extend.dir/src/components/sign_extend/sign_extend.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_datapath.dir/build.make CMakeFiles/test_datapath.dir/src/components/sign_extend/sign_extend.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_processor.dir/build.make CMakeFiles/test_processor.dir/src/components/sign_extend/sign_extend.cpp.i
 .PHONY : src/components/sign_extend/sign_extend.cpp.i
 
 src/components/sign_extend/sign_extend.s: src/components/sign_extend/sign_extend.cpp.s
@@ -395,6 +456,8 @@ src/components/sign_extend/sign_extend.s: src/components/sign_extend/sign_extend
 # target to generate assembly for a file
 src/components/sign_extend/sign_extend.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_sign_extend.dir/build.make CMakeFiles/test_sign_extend.dir/src/components/sign_extend/sign_extend.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_datapath.dir/build.make CMakeFiles/test_datapath.dir/src/components/sign_extend/sign_extend.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_processor.dir/build.make CMakeFiles/test_processor.dir/src/components/sign_extend/sign_extend.cpp.s
 .PHONY : src/components/sign_extend/sign_extend.cpp.s
 
 src/components/sign_extend/sign_extend_tb.o: src/components/sign_extend/sign_extend_tb.cpp.o
@@ -421,6 +484,159 @@ src/components/sign_extend/sign_extend_tb.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_sign_extend.dir/build.make CMakeFiles/test_sign_extend.dir/src/components/sign_extend/sign_extend_tb.cpp.s
 .PHONY : src/components/sign_extend/sign_extend_tb.cpp.s
 
+src/control/unit_control.o: src/control/unit_control.cpp.o
+.PHONY : src/control/unit_control.o
+
+# target to build an object file
+src/control/unit_control.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_unit_control.dir/build.make CMakeFiles/test_unit_control.dir/src/control/unit_control.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_datapath.dir/build.make CMakeFiles/test_datapath.dir/src/control/unit_control.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_processor.dir/build.make CMakeFiles/test_processor.dir/src/control/unit_control.cpp.o
+.PHONY : src/control/unit_control.cpp.o
+
+src/control/unit_control.i: src/control/unit_control.cpp.i
+.PHONY : src/control/unit_control.i
+
+# target to preprocess a source file
+src/control/unit_control.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_unit_control.dir/build.make CMakeFiles/test_unit_control.dir/src/control/unit_control.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_datapath.dir/build.make CMakeFiles/test_datapath.dir/src/control/unit_control.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_processor.dir/build.make CMakeFiles/test_processor.dir/src/control/unit_control.cpp.i
+.PHONY : src/control/unit_control.cpp.i
+
+src/control/unit_control.s: src/control/unit_control.cpp.s
+.PHONY : src/control/unit_control.s
+
+# target to generate assembly for a file
+src/control/unit_control.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_unit_control.dir/build.make CMakeFiles/test_unit_control.dir/src/control/unit_control.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_datapath.dir/build.make CMakeFiles/test_datapath.dir/src/control/unit_control.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_processor.dir/build.make CMakeFiles/test_processor.dir/src/control/unit_control.cpp.s
+.PHONY : src/control/unit_control.cpp.s
+
+src/control/unit_control_tb.o: src/control/unit_control_tb.cpp.o
+.PHONY : src/control/unit_control_tb.o
+
+# target to build an object file
+src/control/unit_control_tb.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_unit_control.dir/build.make CMakeFiles/test_unit_control.dir/src/control/unit_control_tb.cpp.o
+.PHONY : src/control/unit_control_tb.cpp.o
+
+src/control/unit_control_tb.i: src/control/unit_control_tb.cpp.i
+.PHONY : src/control/unit_control_tb.i
+
+# target to preprocess a source file
+src/control/unit_control_tb.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_unit_control.dir/build.make CMakeFiles/test_unit_control.dir/src/control/unit_control_tb.cpp.i
+.PHONY : src/control/unit_control_tb.cpp.i
+
+src/control/unit_control_tb.s: src/control/unit_control_tb.cpp.s
+.PHONY : src/control/unit_control_tb.s
+
+# target to generate assembly for a file
+src/control/unit_control_tb.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_unit_control.dir/build.make CMakeFiles/test_unit_control.dir/src/control/unit_control_tb.cpp.s
+.PHONY : src/control/unit_control_tb.cpp.s
+
+src/datapath/datapath.o: src/datapath/datapath.cpp.o
+.PHONY : src/datapath/datapath.o
+
+# target to build an object file
+src/datapath/datapath.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_datapath.dir/build.make CMakeFiles/test_datapath.dir/src/datapath/datapath.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_processor.dir/build.make CMakeFiles/test_processor.dir/src/datapath/datapath.cpp.o
+.PHONY : src/datapath/datapath.cpp.o
+
+src/datapath/datapath.i: src/datapath/datapath.cpp.i
+.PHONY : src/datapath/datapath.i
+
+# target to preprocess a source file
+src/datapath/datapath.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_datapath.dir/build.make CMakeFiles/test_datapath.dir/src/datapath/datapath.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_processor.dir/build.make CMakeFiles/test_processor.dir/src/datapath/datapath.cpp.i
+.PHONY : src/datapath/datapath.cpp.i
+
+src/datapath/datapath.s: src/datapath/datapath.cpp.s
+.PHONY : src/datapath/datapath.s
+
+# target to generate assembly for a file
+src/datapath/datapath.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_datapath.dir/build.make CMakeFiles/test_datapath.dir/src/datapath/datapath.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_processor.dir/build.make CMakeFiles/test_processor.dir/src/datapath/datapath.cpp.s
+.PHONY : src/datapath/datapath.cpp.s
+
+src/datapath/datapath_tb.o: src/datapath/datapath_tb.cpp.o
+.PHONY : src/datapath/datapath_tb.o
+
+# target to build an object file
+src/datapath/datapath_tb.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_datapath.dir/build.make CMakeFiles/test_datapath.dir/src/datapath/datapath_tb.cpp.o
+.PHONY : src/datapath/datapath_tb.cpp.o
+
+src/datapath/datapath_tb.i: src/datapath/datapath_tb.cpp.i
+.PHONY : src/datapath/datapath_tb.i
+
+# target to preprocess a source file
+src/datapath/datapath_tb.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_datapath.dir/build.make CMakeFiles/test_datapath.dir/src/datapath/datapath_tb.cpp.i
+.PHONY : src/datapath/datapath_tb.cpp.i
+
+src/datapath/datapath_tb.s: src/datapath/datapath_tb.cpp.s
+.PHONY : src/datapath/datapath_tb.s
+
+# target to generate assembly for a file
+src/datapath/datapath_tb.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_datapath.dir/build.make CMakeFiles/test_datapath.dir/src/datapath/datapath_tb.cpp.s
+.PHONY : src/datapath/datapath_tb.cpp.s
+
+src/processor/processor.o: src/processor/processor.cpp.o
+.PHONY : src/processor/processor.o
+
+# target to build an object file
+src/processor/processor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_processor.dir/build.make CMakeFiles/test_processor.dir/src/processor/processor.cpp.o
+.PHONY : src/processor/processor.cpp.o
+
+src/processor/processor.i: src/processor/processor.cpp.i
+.PHONY : src/processor/processor.i
+
+# target to preprocess a source file
+src/processor/processor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_processor.dir/build.make CMakeFiles/test_processor.dir/src/processor/processor.cpp.i
+.PHONY : src/processor/processor.cpp.i
+
+src/processor/processor.s: src/processor/processor.cpp.s
+.PHONY : src/processor/processor.s
+
+# target to generate assembly for a file
+src/processor/processor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_processor.dir/build.make CMakeFiles/test_processor.dir/src/processor/processor.cpp.s
+.PHONY : src/processor/processor.cpp.s
+
+src/processor/processor_tb.o: src/processor/processor_tb.cpp.o
+.PHONY : src/processor/processor_tb.o
+
+# target to build an object file
+src/processor/processor_tb.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_processor.dir/build.make CMakeFiles/test_processor.dir/src/processor/processor_tb.cpp.o
+.PHONY : src/processor/processor_tb.cpp.o
+
+src/processor/processor_tb.i: src/processor/processor_tb.cpp.i
+.PHONY : src/processor/processor_tb.i
+
+# target to preprocess a source file
+src/processor/processor_tb.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_processor.dir/build.make CMakeFiles/test_processor.dir/src/processor/processor_tb.cpp.i
+.PHONY : src/processor/processor_tb.cpp.i
+
+src/processor/processor_tb.s: src/processor/processor_tb.cpp.s
+.PHONY : src/processor/processor_tb.s
+
+# target to generate assembly for a file
+src/processor/processor_tb.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_processor.dir/build.make CMakeFiles/test_processor.dir/src/processor/processor_tb.cpp.s
+.PHONY : src/processor/processor_tb.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -430,10 +646,13 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test_alu"
+	@echo "... test_datapath"
 	@echo "... test_mux"
 	@echo "... test_pc"
+	@echo "... test_processor"
 	@echo "... test_reg"
 	@echo "... test_sign_extend"
+	@echo "... test_unit_control"
 	@echo "... src/components/alu/alu.o"
 	@echo "... src/components/alu/alu.i"
 	@echo "... src/components/alu/alu.s"
@@ -464,6 +683,24 @@ help:
 	@echo "... src/components/sign_extend/sign_extend_tb.o"
 	@echo "... src/components/sign_extend/sign_extend_tb.i"
 	@echo "... src/components/sign_extend/sign_extend_tb.s"
+	@echo "... src/control/unit_control.o"
+	@echo "... src/control/unit_control.i"
+	@echo "... src/control/unit_control.s"
+	@echo "... src/control/unit_control_tb.o"
+	@echo "... src/control/unit_control_tb.i"
+	@echo "... src/control/unit_control_tb.s"
+	@echo "... src/datapath/datapath.o"
+	@echo "... src/datapath/datapath.i"
+	@echo "... src/datapath/datapath.s"
+	@echo "... src/datapath/datapath_tb.o"
+	@echo "... src/datapath/datapath_tb.i"
+	@echo "... src/datapath/datapath_tb.s"
+	@echo "... src/processor/processor.o"
+	@echo "... src/processor/processor.i"
+	@echo "... src/processor/processor.s"
+	@echo "... src/processor/processor_tb.o"
+	@echo "... src/processor/processor_tb.i"
+	@echo "... src/processor/processor_tb.s"
 .PHONY : help
 
 

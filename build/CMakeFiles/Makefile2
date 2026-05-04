@@ -68,6 +68,9 @@ all: CMakeFiles/test_reg.dir/all
 all: CMakeFiles/test_pc.dir/all
 all: CMakeFiles/test_mux.dir/all
 all: CMakeFiles/test_sign_extend.dir/all
+all: CMakeFiles/test_unit_control.dir/all
+all: CMakeFiles/test_datapath.dir/all
+all: CMakeFiles/test_processor.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -80,6 +83,9 @@ clean: CMakeFiles/test_reg.dir/clean
 clean: CMakeFiles/test_pc.dir/clean
 clean: CMakeFiles/test_mux.dir/clean
 clean: CMakeFiles/test_sign_extend.dir/clean
+clean: CMakeFiles/test_unit_control.dir/clean
+clean: CMakeFiles/test_datapath.dir/clean
+clean: CMakeFiles/test_processor.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -115,7 +121,7 @@ CMakeFiles/test_alu.dir/clean:
 CMakeFiles/test_reg.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_reg.dir/build.make CMakeFiles/test_reg.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_reg.dir/build.make CMakeFiles/test_reg.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/Ludmilla/Documents/risc_pipeline_processor/build/CMakeFiles --progress-num=10,11,12 "Built target test_reg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/Ludmilla/Documents/risc_pipeline_processor/build/CMakeFiles --progress-num=27,28,29 "Built target test_reg"
 .PHONY : CMakeFiles/test_reg.dir/all
 
 # Build rule for subdir invocation for target.
@@ -141,7 +147,7 @@ CMakeFiles/test_reg.dir/clean:
 CMakeFiles/test_pc.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pc.dir/build.make CMakeFiles/test_pc.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pc.dir/build.make CMakeFiles/test_pc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/Ludmilla/Documents/risc_pipeline_processor/build/CMakeFiles --progress-num=7,8,9 "Built target test_pc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/Ludmilla/Documents/risc_pipeline_processor/build/CMakeFiles --progress-num=15,16,17 "Built target test_pc"
 .PHONY : CMakeFiles/test_pc.dir/all
 
 # Build rule for subdir invocation for target.
@@ -167,7 +173,7 @@ CMakeFiles/test_pc.dir/clean:
 CMakeFiles/test_mux.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_mux.dir/build.make CMakeFiles/test_mux.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_mux.dir/build.make CMakeFiles/test_mux.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/Ludmilla/Documents/risc_pipeline_processor/build/CMakeFiles --progress-num=4,5,6 "Built target test_mux"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/Ludmilla/Documents/risc_pipeline_processor/build/CMakeFiles --progress-num=12,13,14 "Built target test_mux"
 .PHONY : CMakeFiles/test_mux.dir/all
 
 # Build rule for subdir invocation for target.
@@ -193,7 +199,7 @@ CMakeFiles/test_mux.dir/clean:
 CMakeFiles/test_sign_extend.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_sign_extend.dir/build.make CMakeFiles/test_sign_extend.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_sign_extend.dir/build.make CMakeFiles/test_sign_extend.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/Ludmilla/Documents/risc_pipeline_processor/build/CMakeFiles --progress-num=13,14,15 "Built target test_sign_extend"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/Ludmilla/Documents/risc_pipeline_processor/build/CMakeFiles --progress-num=30,31,32 "Built target test_sign_extend"
 .PHONY : CMakeFiles/test_sign_extend.dir/all
 
 # Build rule for subdir invocation for target.
@@ -211,6 +217,84 @@ test_sign_extend: CMakeFiles/test_sign_extend.dir/rule
 CMakeFiles/test_sign_extend.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_sign_extend.dir/build.make CMakeFiles/test_sign_extend.dir/clean
 .PHONY : CMakeFiles/test_sign_extend.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_unit_control.dir
+
+# All Build rule for target.
+CMakeFiles/test_unit_control.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_unit_control.dir/build.make CMakeFiles/test_unit_control.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_unit_control.dir/build.make CMakeFiles/test_unit_control.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/Ludmilla/Documents/risc_pipeline_processor/build/CMakeFiles --progress-num=33,34,35 "Built target test_unit_control"
+.PHONY : CMakeFiles/test_unit_control.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_unit_control.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Ludmilla/Documents/risc_pipeline_processor/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_unit_control.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Ludmilla/Documents/risc_pipeline_processor/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_unit_control.dir/rule
+
+# Convenience name for target.
+test_unit_control: CMakeFiles/test_unit_control.dir/rule
+.PHONY : test_unit_control
+
+# clean rule for target.
+CMakeFiles/test_unit_control.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_unit_control.dir/build.make CMakeFiles/test_unit_control.dir/clean
+.PHONY : CMakeFiles/test_unit_control.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_datapath.dir
+
+# All Build rule for target.
+CMakeFiles/test_datapath.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_datapath.dir/build.make CMakeFiles/test_datapath.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_datapath.dir/build.make CMakeFiles/test_datapath.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/Ludmilla/Documents/risc_pipeline_processor/build/CMakeFiles --progress-num=4,5,6,7,8,9,10,11 "Built target test_datapath"
+.PHONY : CMakeFiles/test_datapath.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_datapath.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Ludmilla/Documents/risc_pipeline_processor/build/CMakeFiles 8
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_datapath.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Ludmilla/Documents/risc_pipeline_processor/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_datapath.dir/rule
+
+# Convenience name for target.
+test_datapath: CMakeFiles/test_datapath.dir/rule
+.PHONY : test_datapath
+
+# clean rule for target.
+CMakeFiles/test_datapath.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_datapath.dir/build.make CMakeFiles/test_datapath.dir/clean
+.PHONY : CMakeFiles/test_datapath.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_processor.dir
+
+# All Build rule for target.
+CMakeFiles/test_processor.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_processor.dir/build.make CMakeFiles/test_processor.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_processor.dir/build.make CMakeFiles/test_processor.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/Ludmilla/Documents/risc_pipeline_processor/build/CMakeFiles --progress-num=18,19,20,21,22,23,24,25,26 "Built target test_processor"
+.PHONY : CMakeFiles/test_processor.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_processor.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Ludmilla/Documents/risc_pipeline_processor/build/CMakeFiles 9
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_processor.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Ludmilla/Documents/risc_pipeline_processor/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_processor.dir/rule
+
+# Convenience name for target.
+test_processor: CMakeFiles/test_processor.dir/rule
+.PHONY : test_processor
+
+# clean rule for target.
+CMakeFiles/test_processor.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_processor.dir/build.make CMakeFiles/test_processor.dir/clean
+.PHONY : CMakeFiles/test_processor.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

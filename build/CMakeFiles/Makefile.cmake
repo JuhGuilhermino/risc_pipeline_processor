@@ -49,4 +49,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/test_pc.dir/DependInfo.cmake"
   "CMakeFiles/test_mux.dir/DependInfo.cmake"
   "CMakeFiles/test_sign_extend.dir/DependInfo.cmake"
+  "CMakeFiles/test_unit_control.dir/DependInfo.cmake"
+  "CMakeFiles/test_datapath.dir/DependInfo.cmake"
+  "CMakeFiles/test_processor.dir/DependInfo.cmake"
   )

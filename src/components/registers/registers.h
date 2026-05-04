@@ -9,27 +9,28 @@
  * 
  */
 
+#pragma once
+
 #include <systemc.h>
 #include "types/types.h"
 
 SC_MODULE(registers) {
 
-    // input
+    // inputs
     sc_in<bool> clk;
     sc_in<bool> reg_write;
-    sc_in<reg_t> rs1;  // fonte
-    sc_in<reg_t> rs2;  // fonte
-    sc_in<reg_t> rd;   // destino
+    sc_in<reg_t> rs1;
+    sc_in<reg_t> rs2;
+    sc_in<reg_t> rd;
     sc_in<word_t> write_data;
 
-    // output
+    // outputs
     sc_out<word_t> read_data1;
     sc_out<word_t> read_data2;
 
-    // registers bank
+    // banco
     word_t regs[NUM_REGS];
 
-    //methods
     void read();
     void write();
 
@@ -44,5 +45,4 @@ SC_MODULE(registers) {
         SC_METHOD(write);
         sensitive << clk.pos();
     }
-
 };

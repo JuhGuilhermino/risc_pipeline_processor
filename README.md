@@ -13,16 +13,16 @@ Organização da implementação do projeto:
 
 **Júlia Guilhermino**
 - [x] ULA `/src/components/alu/*`
-- [ ] Banco de registradores `/src/components/registers/*`
-- [ ] Memória de instrução `/src/components/instruction_memory/*`
-- [ ] Memória de dados `/src/components/data_memory/*`
-- [ ] Registradores de Pipeline `/src/components/registers_pipeline/*`
+- [x] Banco de registradores `/src/components/registers/*`
+- [x] Memória de instrução `/src/components/instruction_memory/*`
+- [x] Memória de dados `/src/components/data_memory/*`
+- [x] Registradores de Pipeline `/src/components/registers_pipeline/*`
 - [ ] Conexão dos dados `/src/datapath/datapath.*`
 
 **Ludmilla Rodrigues**
 - [x] Contador de programa `/src/components/pc/`
 - [x] MUX ``/src/components/mux/mux.*`
 - [x] Sing extend ``/src/components/sign_extend/sign_extend.*`
-- [ ] Unidade de controle `/src/control/*`
+- [x] Unidade de controle `/src/control/*`
 - [ ] Conexão de sinais de controle `/src/datapath/datapath*`
 - [ ] Construção do pipeline `/src/processor/processor.*`

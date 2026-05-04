@@ -3,5 +3,8 @@
 /mnt/c/Users/Ludmilla/Documents/risc_pipeline_processor/build/CMakeFiles/test_pc.dir
 /mnt/c/Users/Ludmilla/Documents/risc_pipeline_processor/build/CMakeFiles/test_mux.dir
 /mnt/c/Users/Ludmilla/Documents/risc_pipeline_processor/build/CMakeFiles/test_sign_extend.dir
+/mnt/c/Users/Ludmilla/Documents/risc_pipeline_processor/build/CMakeFiles/test_unit_control.dir
+/mnt/c/Users/Ludmilla/Documents/risc_pipeline_processor/build/CMakeFiles/test_datapath.dir
+/mnt/c/Users/Ludmilla/Documents/risc_pipeline_processor/build/CMakeFiles/test_processor.dir
 /mnt/c/Users/Ludmilla/Documents/risc_pipeline_processor/build/CMakeFiles/edit_cache.dir
 /mnt/c/Users/Ludmilla/Documents/risc_pipeline_processor/build/CMakeFiles/rebuild_cache.dir
