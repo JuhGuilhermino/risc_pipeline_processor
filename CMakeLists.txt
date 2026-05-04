@@ -77,7 +77,10 @@ target_link_libraries(test_reg systemc)
 target_link_libraries(test_pc systemc)
 target_link_libraries(test_mux systemc)
 target_link_libraries(test_sign_extend systemc)
+<<<<<<< HEAD
 target_link_libraries(test_unit_control systemc)
 target_link_libraries(test_datapath systemc)
 target_link_libraries(test_processor systemc)
 
+=======
+>>>>>>> a3217e8c0389e499df9ba8fcaee616b8918d7ade
