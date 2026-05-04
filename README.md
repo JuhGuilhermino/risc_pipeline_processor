@@ -14,7 +14,7 @@ Organização da implementação do projeto:
 **Júlia Guilhermino**
 - [x] ULA `/src/components/alu/*`
 - [x] Banco de registradores `/src/components/registers/*`
-- [ ] Memória de instrução `/src/components/instruction_memory/*`
+- [x] Memória de instrução `/src/components/instruction_memory/*`
 - [ ] Memória de dados `/src/components/data_memory/*`
 - [ ] Registradores de Pipeline `/src/components/registers_pipeline/*`
 - [ ] Conexão dos dados `/src/datapath/datapath.*`

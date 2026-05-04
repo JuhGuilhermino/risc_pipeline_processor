@@ -155,6 +155,19 @@ test_imem/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_imem.dir/build.make CMakeFiles/test_imem.dir/build
 .PHONY : test_imem/fast
 
+#=============================================================================
+# Target rules for targets named test_dmem
+
+# Build rule for target.
+test_dmem: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_dmem
+.PHONY : test_dmem
+
+# fast build rule for target.
+test_dmem/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_dmem.dir/build.make CMakeFiles/test_dmem.dir/build
+.PHONY : test_dmem/fast
+
 src/components/alu/alu.o: src/components/alu/alu.cpp.o
 .PHONY : src/components/alu/alu.o
 
@@ -202,6 +215,54 @@ src/components/alu/alu_tb.s: src/components/alu/alu_tb.cpp.s
 src/components/alu/alu_tb.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_alu.dir/build.make CMakeFiles/test_alu.dir/src/components/alu/alu_tb.cpp.s
 .PHONY : src/components/alu/alu_tb.cpp.s
+
+src/components/data_memory/data_memory.o: src/components/data_memory/data_memory.cpp.o
+.PHONY : src/components/data_memory/data_memory.o
+
+# target to build an object file
+src/components/data_memory/data_memory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_dmem.dir/build.make CMakeFiles/test_dmem.dir/src/components/data_memory/data_memory.cpp.o
+.PHONY : src/components/data_memory/data_memory.cpp.o
+
+src/components/data_memory/data_memory.i: src/components/data_memory/data_memory.cpp.i
+.PHONY : src/components/data_memory/data_memory.i
+
+# target to preprocess a source file
+src/components/data_memory/data_memory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_dmem.dir/build.make CMakeFiles/test_dmem.dir/src/components/data_memory/data_memory.cpp.i
+.PHONY : src/components/data_memory/data_memory.cpp.i
+
+src/components/data_memory/data_memory.s: src/components/data_memory/data_memory.cpp.s
+.PHONY : src/components/data_memory/data_memory.s
+
+# target to generate assembly for a file
+src/components/data_memory/data_memory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_dmem.dir/build.make CMakeFiles/test_dmem.dir/src/components/data_memory/data_memory.cpp.s
+.PHONY : src/components/data_memory/data_memory.cpp.s
+
+src/components/data_memory/data_memory_tb.o: src/components/data_memory/data_memory_tb.cpp.o
+.PHONY : src/components/data_memory/data_memory_tb.o
+
+# target to build an object file
+src/components/data_memory/data_memory_tb.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_dmem.dir/build.make CMakeFiles/test_dmem.dir/src/components/data_memory/data_memory_tb.cpp.o
+.PHONY : src/components/data_memory/data_memory_tb.cpp.o
+
+src/components/data_memory/data_memory_tb.i: src/components/data_memory/data_memory_tb.cpp.i
+.PHONY : src/components/data_memory/data_memory_tb.i
+
+# target to preprocess a source file
+src/components/data_memory/data_memory_tb.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_dmem.dir/build.make CMakeFiles/test_dmem.dir/src/components/data_memory/data_memory_tb.cpp.i
+.PHONY : src/components/data_memory/data_memory_tb.cpp.i
+
+src/components/data_memory/data_memory_tb.s: src/components/data_memory/data_memory_tb.cpp.s
+.PHONY : src/components/data_memory/data_memory_tb.s
+
+# target to generate assembly for a file
+src/components/data_memory/data_memory_tb.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_dmem.dir/build.make CMakeFiles/test_dmem.dir/src/components/data_memory/data_memory_tb.cpp.s
+.PHONY : src/components/data_memory/data_memory_tb.cpp.s
 
 src/components/instruction_memory/instruction_memory.o: src/components/instruction_memory/instruction_memory.cpp.o
 .PHONY : src/components/instruction_memory/instruction_memory.o
@@ -308,6 +369,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test_alu"
+	@echo "... test_dmem"
 	@echo "... test_imem"
 	@echo "... test_reg"
 	@echo "... src/components/alu/alu.o"
@@ -316,6 +378,12 @@ help:
 	@echo "... src/components/alu/alu_tb.o"
 	@echo "... src/components/alu/alu_tb.i"
 	@echo "... src/components/alu/alu_tb.s"
+	@echo "... src/components/data_memory/data_memory.o"
+	@echo "... src/components/data_memory/data_memory.i"
+	@echo "... src/components/data_memory/data_memory.s"
+	@echo "... src/components/data_memory/data_memory_tb.o"
+	@echo "... src/components/data_memory/data_memory_tb.i"
+	@echo "... src/components/data_memory/data_memory_tb.s"
 	@echo "... src/components/instruction_memory/instruction_memory.o"
 	@echo "... src/components/instruction_memory/instruction_memory.i"
 	@echo "... src/components/instruction_memory/instruction_memory.s"

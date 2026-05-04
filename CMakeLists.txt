@@ -33,6 +33,12 @@ add_executable(test_imem
     src/components/instruction_memory/instruction_memory.cpp
 )
 
+add_executable(test_dmem
+    src/components/data_memory/data_memory_tb.cpp
+    src/components/data_memory/data_memory.cpp
+)
+
 target_link_libraries(test_alu systemc)
 target_link_libraries(test_reg systemc)
 target_link_libraries(test_imem systemc)
+target_link_libraries(test_dmem systemc)
