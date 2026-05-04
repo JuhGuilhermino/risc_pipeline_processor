@@ -1,4 +1,4 @@
-# Processador RISC em Pipeline usando SystemC
+# Processador RISC em Pipeline usando SystemC 2
 ---
 
 Este projeto foi desenvolvido por [Júlia Guilhermino](https://github.com/JuhGuilhermino) e [Ludmilla Rodrigues](https://github.com/Ludrodrigues) para disiciplina DIM0129 - Organização de Computadores, no ano de 2026. Ele consiste na implementação de um processador RISC organizado em um pipeline de 5 estados utilizando a bilioteca SystemC.

@@ -16,8 +16,6 @@ SC_MODULE(alu) {
     // input
     sc_in<word_t> A, B;
     sc_in<sc_uint<3>> alu_op;
-    //sc_in<bool> UlaOP, JumpCmp, JumpNeg;
-    //sc_in_clk clock;
 
     // output
     sc_out<word_t> result;

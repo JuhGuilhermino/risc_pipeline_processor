@@ -19,9 +19,14 @@ link_directories(
 )
 
 add_executable(test_alu
-    tests/components/alu_tb.cpp
+    src/components/alu/alu_tb.cpp
     src/components/alu/alu.cpp
 )
 
+add_executable(test_reg
+    src/components/registers/registers_tb.cpp
+    src/components/registers/registers.cpp
+)
 
 target_link_libraries(test_alu systemc)
+target_link_libraries(test_reg systemc)
