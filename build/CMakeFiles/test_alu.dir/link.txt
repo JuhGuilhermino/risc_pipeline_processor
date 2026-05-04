@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/test_alu.dir/src/components/alu/alu_tb.cpp.o CMakeFiles/test_alu.dir/src/components/alu/alu.cpp.o -o test_alu   -L/usr/local/systemc-3.0.2/lib-linux64  -Wl,-rpath,/usr/local/systemc-3.0.2/lib-linux64 -lsystemc 

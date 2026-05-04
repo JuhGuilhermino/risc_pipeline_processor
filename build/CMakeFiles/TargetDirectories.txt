@@ -1,4 +1,0 @@
-/mnt/c/Users/juhgu/Code/risc_pipeline_processor/build/CMakeFiles/test_alu.dir
-/mnt/c/Users/juhgu/Code/risc_pipeline_processor/build/CMakeFiles/test_reg.dir
-/mnt/c/Users/juhgu/Code/risc_pipeline_processor/build/CMakeFiles/edit_cache.dir
-/mnt/c/Users/juhgu/Code/risc_pipeline_processor/build/CMakeFiles/rebuild_cache.dir
