@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/test_dmem.dir/src/components/data_memory/data_memory_tb.cpp.o CMakeFiles/test_dmem.dir/src/components/data_memory/data_memory.cpp.o -o test_dmem   -L/usr/local/systemc-3.0.2/lib-linux64  -Wl,-rpath,/usr/local/systemc-3.0.2/lib-linux64 -lsystemc 
