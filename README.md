@@ -20,9 +20,9 @@ Organização da implementação do projeto:
 - [ ] Conexão dos dados `/src/datapath/datapath.*`
 
 **Ludmilla Rodrigues**
-- [ ] Contador de programa `/src/components/pc/`
-- [ ] MUX ``/src/components/mux/mux.*`
-- [ ] Sing extend ``/src/components/sign_extend/sign_extend.*`
+- [x] Contador de programa `/src/components/pc/`
+- [x] MUX ``/src/components/mux/mux.*`
+- [x] Sing extend ``/src/components/sign_extend/sign_extend.*`
 - [ ] Unidade de controle `/src/control/*`
 - [ ] Conexão de sinais de controle `/src/datapath/datapath*`
 - [ ] Construção do pipeline `/src/processor/processor.*`
