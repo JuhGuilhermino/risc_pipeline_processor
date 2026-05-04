@@ -15,8 +15,8 @@ Organização da implementação do projeto:
 - [x] ULA `/src/components/alu/*`
 - [x] Banco de registradores `/src/components/registers/*`
 - [x] Memória de instrução `/src/components/instruction_memory/*`
-- [ ] Memória de dados `/src/components/data_memory/*`
-- [ ] Registradores de Pipeline `/src/components/registers_pipeline/*`
+- [x] Memória de dados `/src/components/data_memory/*`
+- [x] Registradores de Pipeline `/src/components/registers_pipeline/*`
 - [ ] Conexão dos dados `/src/datapath/datapath.*`
 
 **Ludmilla Rodrigues**
