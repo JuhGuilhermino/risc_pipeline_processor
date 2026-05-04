@@ -1,0 +1,27 @@
+cmake_minimum_required(VERSION 3.10)
+project(risc_pipeline_processor)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+# 🔧 Ajuste para o caminho do seu SystemC
+set(SYSTEMC_HOME /usr/local/systemc-3.0.2)
+
+# Includes
+include_directories(
+    ${SYSTEMC_HOME}/include
+    ${CMAKE_SOURCE_DIR}/src
+)
+
+# Libs
+link_directories(
+    ${SYSTEMC_HOME}/lib-linux64
+)
+
+add_executable(test_alu
+    tests/components/alu_tb.cpp
+    src/components/alu/alu.cpp
+)
+
+
+target_link_libraries(test_alu systemc)

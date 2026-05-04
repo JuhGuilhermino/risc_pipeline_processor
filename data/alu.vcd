@@ -1,0 +1,87 @@
+$date
+     May 03, 2026       21:49:38
+$end
+
+$version
+ SystemC 3.0.2-Accellera --- May  2 2026 17:16:32
+$end
+
+$timescale
+     1 ns
+$end
+
+$scope module SystemC $end
+$var wire   16  aaaaa  A [15:0]  $end
+$var wire   16  aaaab  B [15:0]  $end
+$var wire    3  aaaac  alu_op [2:0]  $end
+$var wire   16  aaaad  result [15:0]  $end
+$var wire    2  aaaae  flags [1:0]  $end
+$var wire    1  aaaaf  CLK       $end
+$upscope $end
+$enddefinitions  $end
+
+$comment
+All initial values are dumped below at time 0 sec = 0 timescale units.
+$end
+
+$dumpvars
+b1 aaaaa
+b0 aaaab
+b10 aaaac
+b0 aaaad
+b10 aaaae
+1aaaaf
+$end
+
+#5
+0aaaaf
+
+#10
+b11 aaaac
+b1 aaaad
+b0 aaaae
+1aaaaf
+
+#15
+0aaaaf
+
+#20
+b1 aaaab
+b100 aaaac
+b0 aaaad
+b10 aaaae
+1aaaaf
+
+#25
+0aaaaf
+
+#30
+b0 aaaab
+b101 aaaac
+b1111111111111110 aaaad
+b1 aaaae
+1aaaaf
+
+#35
+0aaaaf
+
+#40
+b10 aaaaa
+b100 aaaab
+b0 aaaac
+b110 aaaad
+b0 aaaae
+1aaaaf
+
+#45
+0aaaaf
+
+#50
+b1000 aaaaa
+b1 aaaac
+b100 aaaad
+1aaaaf
+
+#55
+0aaaaf
+

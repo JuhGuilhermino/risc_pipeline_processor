@@ -12,34 +12,17 @@ Escrever orientações aqui:
 Organização da implementação do projeto:
 
 **Júlia Guilhermino**
-- [ ] ULA
-    - [ ] `/src/components/alu/alu.*`
-    - [ ] `/tests/components/alu_tb.cpp`
-- [ ] Banco de registradores
-    - [ ] `/src/components/registers/registers.**`
-    - [ ] `/tests/components/registers_tb.cpp`
-- [ ] Memória de instrução 
-    - [ ] `/src/components/instruction_memory/intruction_memeory.*`
-    - [ ] `/tests/components/instruction_memory_tb.cpp`
-- [ ] Memória de dados
-    - [ ] `/src/components/data_memory/data_memory.*`
-    - [ ] `/tests/components/data_memory_tb.cpp`
-- [ ] Registradores de Pipeline
-    - [ ] `/src/components/registers_pipeline/registers.*`
-    - [ ] `/tests/components/registers_pipeline_tb.cpp`
+- [x] ULA `/src/components/alu/*`
+- [ ] Banco de registradores `/src/components/registers/*`
+- [ ] Memória de instrução `/src/components/instruction_memory/*`
+- [ ] Memória de dados `/src/components/data_memory/*`
+- [ ] Registradores de Pipeline `/src/components/registers_pipeline/*`
 - [ ] Conexão dos dados `/src/datapath/datapath.*`
 
-
 **Ludmilla Rodrigues**
-- [ ] Contador de programa 
-    - [ ] `/src/components/pc/`
-    - [ ] `/tests/components/pc_tb.cpp`
+- [ ] Contador de programa `/src/components/pc/`
 - [ ] MUX ``/src/components/mux/mux.*`
 - [ ] Sing extend ``/src/components/sign_extend/sign_extend.*`
-- [ ] Unidade de controle
-    - [ ] `/src/control/pipeline/control_unit*`
-    - [ ] `tests/control/pipeline_unit_control_tb.cpp`
-- [ ] Conexão de sinais de controle `/src/integration/pipeline/datapath*`
-- [ ] Construção do pipeline 
-    - [ ] `/src/processor/processor.*`
-    - [ ] `tests/processor_tb.cpp`
+- [ ] Unidade de controle `/src/control/*`
+- [ ] Conexão de sinais de controle `/src/datapath/datapath*`
+- [ ] Construção do pipeline `/src/processor/processor.*`
